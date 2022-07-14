@@ -20,12 +20,12 @@ SELECT a.codAlumno, a.nombre_apellido, m.semestre
     WHERE m.semestre = '2021-2';
     
     
-CREATE VIEW Matriculados2022 AS
+CREATE VIEW Matriculados2022completo AS
 SELECT a.codAlumno, a.nombre_apellido, m.semestre
 	FROM alumno a INNER JOIN matricula m ON a.codAlumno = m.codAlumno
     WHERE m.semestre = '2022-1';
 
-CREATE VIEW Matriculados2021 AS
+CREATE VIEW Matriculados2021completo AS
 SELECT a.codAlumno, a.nombre_apellido, m.semestre
 	FROM alumno a INNER JOIN matricula m ON a.codAlumno = m.codAlumno
     WHERE m.semestre = '2021-2';
